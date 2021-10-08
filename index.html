@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda - Multicapa</title>
+		<style>
+			@import url("styles/main.css");
+			@import url("styles/containerSee.css");
+			@import url("styles/containerAdd.css");
+		</style>
+</head>
+<body>
+
+	<!--Creation about the sidebar -->
+	<section class = "sidebar">
+		<button class = "sidebar_button">
+			<i class="fas fa-eye"></i>
+			Ver Contactos
+		</button>
+	</section>
+
+	<!--Creation about the container that will have tho important section -->
+	<div class = "container">
+		<section class = "container_h1">
+		<h1> Agenda </h1>
+		</section>
+		<section class = "container_see_info">
+				<div class = "see_info_data">
+					<h1>Contactos</h1>
+					<div class = "data">
+					</div>
+				</div>
+		</section>
+		<section class = "container_add_info">
+			<h1>Nuevo Contacto</h1>
+			<form>
+				<input type = "text" placeholder = "Nombre">
+				<input type = "text" placeholder = "Apellido">
+				<input type = "text" placeholder = "Telefono">
+				<input type = "submit" value = "Añadir">
+			</form>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://kit.fontawesome.com/54d3483a2b.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./scripts/fetch.js"></script>
+	<script src="./scripts/post.js"></script>
+	<script src="./scripts/animations.js"></script>
+</body>
+</html>
+
